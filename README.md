@@ -1,4 +1,4 @@
 yws
 ===
 
-Yaws web server
+Just some random yaws starting point...
