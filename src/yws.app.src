@@ -5,7 +5,8 @@
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  yaws
                  ]},
   {mod, { yws_app, []}},
   {env, []}

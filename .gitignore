@@ -9,3 +9,6 @@ rel/example_project
 .concrete/DEV_MODE
 .rebar
 /rel/yws
+.tags
+.tags_sorted_by_file
+rebar

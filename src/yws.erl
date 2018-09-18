@@ -1,11 +1,22 @@
 -module(yws).
 
--compile(export_all).
+-export([
+    info/0
+]).
+
+-export([
+    start/0,
+    run/0
+]).
+
+info() ->
+    io:format("~s", [os:cmd("curl -vvv http://localhost:8080")]).
 
 start() ->
     {ok, spawn(?MODULE, run, [])}.
 
 run() ->
+    io:format("starting yaws on PORT 8080 ! ~n"),
     Id = "my_server",
     GconfList = [{logdir, "log/"},
                  %% {ebin_dir, ["/example1/ebin", "/example2/ebin"]},
